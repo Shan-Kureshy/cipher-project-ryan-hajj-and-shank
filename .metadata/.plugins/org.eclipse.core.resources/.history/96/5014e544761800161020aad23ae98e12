@@ -27,13 +27,6 @@ public Decrypter(String binary){
 	plainText = conversions.BinaryToHex(binary);
 	cipherText = conversions.BinaryToHex(binary);
 }
-public Decrypter(){
-	plainText = new String[][]{{"00","01","ff","f0"},
-							   {"55","a7","bc", "0f"},
-							   {"23","19","20","77"},
-							   {"23","19","20","12"}};
-	cipherText = plainText;
-}
 	@Override
 	public void subBytes() {
 		// TODO Auto-generated method stub
@@ -44,22 +37,22 @@ public Decrypter(){
 					for(int cs = 0; cs< 16; cs++){
 						if(cipherText[r][c].equals(codeMatrix[rs][cs])){
 							
-							if(rs == 10)plainText[r][c] = "a";
-							else if(rs == 11)plainText[r][c] = "b";
-							else if(rs == 12)plainText[r][c] = "c";
-							else if(rs == 13)plainText[r][c] = "d";
-							else if(rs == 14)plainText[r][c] = "e";
-							else if(rs == 15)plainText[r][c] = "f";
-							else plainText[r][c] = Integer.toString(rs);
+							if(rs == 10)cipherText[r][c] = "a";
+							else if(rs == 11)cipherText[r][c] = "b";
+							else if(rs == 12)cipherText[r][c] = "c";
+							else if(rs == 13)cipherText[r][c] = "d";
+							else if(rs == 14)cipherText[r][c] = "e";
+							else if(rs == 15)cipherText[r][c] = "f";
+							else cipherText[r][c] = Integer.toString(rs);
 							
 							
-							if(cs == 10)plainText[r][c] += "a";
-							else if(cs == 11)plainText[r][c] += "b";
-							else if(cs == 12)plainText[r][c] += "c";
-							else if(cs == 13)plainText[r][c] += "d";
-							else if(cs == 14)plainText[r][c] += "e";
-							else if(cs == 15)plainText[r][c] += "f";
-							else plainText[r][c] += Integer.toString(cs);
+							if(cs == 10)cipherText[r][c] += "a";
+							else if(cs == 11)cipherText[r][c] += "b";
+							else if(cs == 12)cipherText[r][c] += "c";
+							else if(cs == 13)cipherText[r][c] += "d";
+							else if(cs == 14)cipherText[r][c] += "e";
+							else if(cs == 15)cipherText[r][c] += "f";
+							else cipherText[r][c] += Integer.toString(cs);
 						}
 					}
 				}
@@ -81,12 +74,7 @@ public Decrypter(){
 	@Override
 	public void shiftRows() {
 		// TODO Auto-generated method stub
-		for(int r = 0; r < 4; r++){
-			for(int i = 0; i < r; i++){
-				this.shiftRow(r);
-			}
-		}
-	
+		
 	}
 
 	@Override
