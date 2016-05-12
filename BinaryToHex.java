@@ -6,7 +6,7 @@ public class BinaryToHex {
 	private static String[][] hexMatrix = new String[4][4];
 	private String s = "00000001001000110100010101100111100010011010101111001101111011110000000100100011010001010110011110001001101010111100110111101111";
 	
-	
+	 
 	public static String[][] BinaryToHexa(String s)
 	{
 		//String test = "00101100010111110000";
