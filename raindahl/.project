@@ -14,4 +14,41 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/BinaryToHex.java</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/BinaryToHex.java</locationURI>
+		</link>
+		<link>
+			<name>src/Decrypter.java</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/Decrypter.java</locationURI>
+		</link>
+		<link>
+			<name>src/Tester.java</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/Tester.java</locationURI>
+		</link>
+		<link>
+			<name>src/conversions.java</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/conversions.java</locationURI>
+		</link>
+		<link>
+			<name>src/encoder.java</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/encoder.java</locationURI>
+		</link>
+		<link>
+			<name>src/encrypter.java</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/encrypter.java</locationURI>
+		</link>
+		<link>
+			<name>src/intToHexa.java</name>
+			<type>1</type>
+			<locationURI>PROJECT_LOC/intToHexa.java</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>
