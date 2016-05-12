@@ -1,4 +1,4 @@
-
+ 
 public class encrypter implements encoder{
 	private String[][] codeMatrix = new String[][]{{"63","7c","77","7b","f2","6b","6f","c5","30","01","67","2b","fe","d7","ab","76"},
 												   {"ca","82","c9","7d","fa","59","47","f0","ad","d4","a2","af","9c","a4","72","c0"},
