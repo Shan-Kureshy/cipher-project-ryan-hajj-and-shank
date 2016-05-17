@@ -16,6 +16,13 @@ public class encrypter implements encoder{
 												   {"70","3e","b5","66","48","03","f6","0e","61","35","57","b9","86","c1","1d","9e"},
 												   {"e1","f8","98","11","69","d9","8e","94","9b","1e","87","e9","ce","55","28","df"},
 												   {"8c","a1","89","0d","bf","e6","42","68","41","99","2d","0f","b0","54","bb","16"}};
+	
+	
+	private String[][] roundKey = new String[][]{{"a0","88","23","2a"},
+												 {"fa","54","a3","6c"},
+												 {"fe","2c","39","76"},
+											 	 {"17","b1","39","05"}
+												 };
 	private String[][] plainText;// change to private after testing
 	private String[][] cipherText;// change to private after testing
 	public encrypter(String binary){
