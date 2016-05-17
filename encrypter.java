@@ -22,7 +22,7 @@ public class encrypter implements encoder{
 												 {"fa","54","a3","6c"},
 												 {"fe","2c","39","76"},
 											 	 {"17","b1","39","05"}
-												 };
+												 }; 
 	private String[][] plainText;// change to private after testing
 	private String[][] cipherText;// change to private after testing
 	public encrypter(String binary){
