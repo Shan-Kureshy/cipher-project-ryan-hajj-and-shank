@@ -45,45 +45,9 @@ public class BinaryToHex {
 				temp = "";
 			}
 			// line to add them into a string
-			if (hexCount == 0)
+			if (hexCount <= 9)
 			{
-				hexa += "0";
-			}
-			if (hexCount == 1)
-			{
-				hexa += "1";
-			}
-			if (hexCount == 2)
-			{
-				hexa += "2";
-			}
-			if (hexCount == 3)
-			{
-				hexa += "3";
-			}
-			if (hexCount == 4)
-			{
-				hexa += "4";
-			}
-			if (hexCount == 5)
-			{
-				hexa += "5";
-			}
-			if (hexCount == 6)
-			{
-				hexa += "6";
-			}
-			if (hexCount == 7)
-			{
-				hexa += "7";
-			}
-			if (hexCount == 8)
-			{
-				hexa += "8";
-			}
-			if (hexCount == 9)
-			{
-				hexa += "9";
+				hexa += hexCount.toString();
 			}
 			if (hexCount == 10)
 			{
